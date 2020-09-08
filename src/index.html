@@ -7,16 +7,151 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <title>Justin Hua</title>
   </head>
   <body>
-    <div class="hero-image">
-        <div class="container">
-            <h1>Hi, I'm Justin!</h1>
-            <p class="lead">I'm a third year Computer Engineering student graduating in May 2023. Currently @ Fatigue Science</p>
+    <div id="particles-js"></div>
+    <div class="landing-container d-flex">
+      <div class="row align-items-center w-100">
+        <div class="landing-text col-6 offset-md-1 offset-3">
+            <h1 class>Hi, I'm Justin!</h1>
+            <p class="lead">I'm a third year Computer Engineering student graduating in May 2023. Currently a QA Engineer @ Fatigue Science</p>
+            <p>
+              <a href="https://www.linkedin.com/in/justin-hua-b8a07169/" class="fa fa-linkedin"></a>
+              <a href="https://github.com/huajustin" class="fa fa-github"></a>
+              <a href="http://instagram.com/justinhwaa" class="fa fa-instagram"></a>
+            </p> 
         </div>
+      </div>
     </div>
+
+    <div class="about-container d-flex">
+      <div class="row w-100 align-items-center">
+        <div class="about-header col-6 col-md-6 offset-md-1 offset-3">
+          <h2>About me.</h2>
+          <p class="lead">
+            I'm a third-year Computer Engineering student aspiring to be a software developer with interests in advancing our technology, helping our society, and encouraging sustainability.
+            I'm currently in Vancouver, BC studying at UBC.
+          </p>
+          <p class="lead">
+            During my spare time, you'll find me playing video games with friends, shooting photos for my instagram, playing ultimate frisbee, working out, or finding new places to eat! I
+            also like minimal designs. I'm a bit spontaneous, so you might see me relaxing at home to suddenly hitting up a beach at 5 AM to watch a sunrise. 
+            Feel free to check out my social media links above!
+          </p>
+          <a href="../resume.pdf" class="resume-link">Resume</a>
+        </div>
+        <div class="about-item col-6 col-md-4 offset-3 offset-md-0">
+          <img src="../images/self-photo.jpg" class="img-fluid" alt="Responsive Image">
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="education-container d-flex">
+      <div class="row w-100 align-items-center">
+        <div class="education-header col-6 col-md-5 offset-md-1 offset-3">
+          <h2>Education.</h2>
+        </div>
+        <div class="education-item col-6 col-md-6 offset-md-0 offset-3">
+          <h4>The University of British Columbia</h4>
+          <p class="lead">BASc. in Computer Engineering - Expected May 2023 (CGPA: 84.2%)</p>
+          <p class="lead">Some courses I've taken:</p>
+          <ul>
+            <li class="lead">Computation in Engineering Design</li>
+            <li class="lead">Principles of Software Construction</li>
+            <li class="lead">Introduction to Microcomputers</li>
+            <li class="lead">Basics of Computer Systems</li>
+            <li class="lead">Basic Algorithms and Data Structures</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience-container d-flex">
+      <div class="row w-100 align-items-center">
+        <div class="experience-header col-6 col-md-5 offset-md-1 offset-3">
+          <h2>Work Experience.</h2>
+        </div>
+        <div class="experience-item col-6 col-md-6 offset-3 offset-md-0">
+          <h4>Fatigue Science</h4>
+          <p class="lead">QA Engineer</p>
+          <p class="lead">Developed automated end-to-end test scripts using Protractor for a mobile sleep tracking application. Streamlined QA processes through upgrading and maintaining Python scripts used for sleep data manipulation. 
+            Created and executed manual and automated test cases to verify functionality of product and REST APIs.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-container container-fluid">
+      <div class="row">
+        <div class="projects-header col-6 offset-md-1 offset-3">
+          <h2>Projects.</h2>
+        </div>
+      </div>
+      <div class="row align-items-center projects-item">
+        <div class="projects-desc col-6 col-md-6 offset-3 offset-md-1">
+          <h4>Leaguer Discord Bot</h4>
+          <p class="lead">
+            A Discord bot written in JavaScript using Node.js to periodically provide in-game information of players in the game "League of Legends". Interacts with external REST APIs provided by Riot Games to retrieve
+            player information and store into a MongoDB database using Mongoose. The code was written with modularity and maintainability in mind, so it allows things such as adding new bot commands with just the addition 
+            of a new file. This project is still a work in progress!
+          </p>
+          <p class="lead sub-lead">Check it out here: <a href="https://github.com/huajustin/leaguer-discordbot" class="fa fa-github"></a> </p>
+        </div>
+        <div class="projects-item-image col-6 col-md-4 offset-3 offset-md-0">
+          <img src="../images/leaguer-sample.png" class="img-fluid" alt="Responsive Image">
+        </div>
+      </div>
+
+      <div class="row align-items-center projects-item">
+        <div class="projects-desc col-6 col-md-7 offset-3 offset-md-1 order-md-2">
+          <h4>Autonomous Line Tracking Android Robot</h4>
+          <p class="lead">
+            A robot I developed with a group to track and follow a given track made of black electrical tape. This used optical sensors to feed information to a PID controller and was able to manuever through given test
+            courses containing obstacles such as intersections and track gaps. My main role was developing the Android app and the Raspberry Pi's bluetooth server that facilitated manual control of the robot. The app was 
+            developed in Java using Android Studio and the bluetooth server was developed in Python and ran on the robot's Raspberry Pi computer running "Raspbian" (now known as "Raspberry Pi OS"), an OS based off of Debian Linux.
+          </p>
+          <p class="lead sub-lead">Check it out here: <a href="https://github.com/huajustin/autonomous-android-robot" class="fa fa-github"></a> </p>
+        </div>
+        <div class="projects-item-image col-6 col-md-2 offset-3 offset-md-1 order-md-1">
+          <img src="../images/autonomous-robot-sample.png" class="img-fluid" alt="Responsive Image">
+        </div>
+      </div>
+
+      <div class="row align-items-center projects-item">
+        <div class="projects-desc col-6 col-md-6 offset-3 offset-md-1">
+          <h4>ext2 File System</h4>
+          <p class="lead">
+            An ext2 file system designed in C using FUSE that can be mounted in Linux and perform read operations on files and directories. It is able to read the ext2 filesystem configuration data from the 
+            given volume file to create the necessary data structures for mounting. This was completed as an exercise to learn more about Linux filesystems including concepts such as superblocks, inodes, and symbolic links. 
+          </p>
+        </div>
+        <div class="projects-item-image col-6 col-md-3 offset-3 offset-md-1">
+          <img src="../images/ext2-sample.png" class="img-fluid" alt="Responsive Image">
+        </div>
+      </div>
+
+      <div class="row align-items-center projects-item">
+        <div class="projects-desc col-6 col-md-7 offset-3 offset-md-1 order-md-2">
+          <h4>Wikipedia Mediator Server</h4>
+          <p class="lead">
+            A server application and handler written in Java to log and process multiple concurrent JSON-formatted Wikipedia Mediator requests. The Wikipedia Mediator interacts with the public
+            library jwiki to perform page queries on Wikipedia and return results based on the type of user request (e.g. getting page text). The server can provide statistics about historical usage through
+            the logged requests and can save log information in between sessions.
+          </p>
+        </div>
+        <div class="projects-item-image col-6 col-md-2 offset-3 offset-md-1 order-md-1">
+          <img src="../images/wikipedia-logo.png" class="img-fluid" alt="Responsive Image">
+        </div>
+      </div>
+    </div>
+
+    
+    <footer class="lead">Made by Justin Hua using HTML, CSS, JavaScript, BootStrap, and particles.js</footer>
     
 
     <!-- Optional JavaScript -->
@@ -24,5 +159,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./particles/particles.js"></script>
+    <script src="./particles/app.js"></script>
+
   </body>
 </html>

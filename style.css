@@ -13,6 +13,12 @@
 	background-color: #F5F5F5;
 }
 
+@media (max-width: 768px) {
+    .about-header {
+        margin-bottom: 10vh;
+    }
+} 
+
 li {
     font-size: 18px !important; 
 }
@@ -42,9 +48,6 @@ li {
 .landing-container {
     height: 100vh;
 }
-.landing-text {
-    position: absolute;
-} 
 
 .about-container {
     margin-bottom: 30vh;
@@ -60,12 +63,10 @@ li {
 }
 
 .education-container {
-    margin-top: 30vh;
     margin-bottom: 30vh;
 }
 
 .experience-container {
-    margin-top: 30vh;
     margin-bottom: 30vh;
 } 
 
@@ -74,7 +75,6 @@ li {
 } 
 
 .projects-container {
-    margin-left: -15px;
     margin-bottom: 15vh;
 }
 .projects-item {

@@ -86,7 +86,11 @@ li {
 
 .experience-container {
     margin-bottom: 30vh;
-} 
+}
+
+.experience-item {
+    margin-bottom: 5vh;
+}
 
 .sub-lead {
     font-size: 17px;
@@ -95,8 +99,13 @@ li {
 .projects-container {
     margin-bottom: 15vh;
 }
+
 .projects-item {
     margin-bottom: 15vh;
+}
+
+.medium-grey {
+    color: #5c5c5c;
 }
 
 footer {
